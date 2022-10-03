@@ -1,32 +1,70 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ['./src/**/*.{html,js}'],
+  mode: 'jit',
   theme: {
     colors: {
-      'ok': 'red',
-      'purple': '#7e5bef',
-      'pink': '#ff49db',
-      'orange': '#ff7849',
-      'green': '#13ce66',
-      'yellow': '#ffc82c',
-      'gray-dark': '#273444',
-      'gray': '#8492a6',
-      'gray-light': '#d3dce6',
+      'primary': "#000",
+      'secondary': '#FFF0D9',
+      'blue': '#6640FF',
+      'white': "#FFF",
+      'inputBorder': "#E1E1E1"
+    },
+    container: {
+      center: true,
+      padding: "15px"
     },
     fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
+      satoshiBlack: ["satoshiBlack", "sans-serif"],
+      SatoshiMedium: ["SatoshiMedium", "sans-serif"],
+      satoshiRegular: ["satoshiRegular", "sans-serif"],
+      SatoshiBold: ["SatoshiBold", "sans-serif"],
+      ClashSemiBold: ["ClashSemiBold", "sans-serif"],
     },
-    extend: {
-      spacing: {
-        '8xl': '96rem',
-        '9xl': '128rem',
+    screens: {
+      mylg: "1100px",
+      xs: "420px",
+      sm: "576px",
+      md: "768px",
+      lg: "992px",
+      xl: "1300px",
+      herobreak: "1156px",
+      myxlg: '1400px'
+    },
+    animation: {
+      "slideLeft": 'slideLeft 40s linear infinite',
+      "slideRight": 'slideRight 40s linear infinite'
+    },
+    keyframes: {
+      slideLeft: {
+        '0%': { transform: 'translateX(0%)' },
+        '100%': { transform: 'translateX(-100%)' },
       },
-      borderRadius: {
-        '4xl': '2rem',
+      slideRight: {
+      '0%': { transform: 'translateX(0%)' },
+      '100%': { transform: 'translateX(100%)' },
       }
     }
   },
+  variants: {},
+  plugins: [function ({ addComponents }) {
+    addComponents({
+      '.container': {
+        maxWidth: '100%',
+        '@screen sm': {
+          maxWidth: '640px',
+        },
+        '@screen md': {
+          maxWidth: '768px',
+        },
+        '@screen lg': {
+          maxWidth: 'calc(100% - 170px) !important',
+        },
+        '@screen xl': {
+          maxWidth: '1400px',
+        },
+      }
+    })
+  }],
 }
-
 

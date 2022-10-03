@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "satoshiBlack";
+  src: url("../src/fonts/Satoshi-Black.otf");
+}
+
+@font-face {
+  font-family: "satoshiRegular";
+  src: url("../src/fonts/Satoshi-Regular.otf");
+}
+@font-face {
+  font-family: "SatoshiMedium";
+  src: url("../src/fonts/Satoshi-Medium.otf");
+}
+@font-face {
+  font-family: "SatoshiBold";
+  src: url("../src/fonts/Satoshi-Bold.otf");
+}
+
+@font-face {
+  font-family: "ClashSemiBold";
+  src: url("../src/fonts/ClashDisplay-Semibold.otf");
+}
