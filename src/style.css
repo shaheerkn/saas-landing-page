@@ -24,3 +24,16 @@
   font-family: "ClashSemiBold";
   src: url("../src/fonts/ClashDisplay-Semibold.otf");
 }
+
+.cliphpath {
+  clip-path: polygon(50% 47%, 0% 100%, 100% 100%);
+}
+
+.active {
+  width: 168px;
+  height: 168px;
+  top: 263px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 8px;
+}

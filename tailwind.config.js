@@ -27,9 +27,11 @@ module.exports = {
       sm: "576px",
       md: "768px",
       lg: "992px",
-      xl: "1300px",
+      l: "1124px",
       herobreak: "1156px",
-      myxlg: '1400px'
+      xl: "1300px",
+      myxlg: '1400px',
+      normaldesktop: '1440px'
     },
     animation: {
       "slideLeft": 'slideLeft 40s linear infinite',
