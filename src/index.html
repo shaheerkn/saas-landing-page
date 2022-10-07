@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="main.css">
   <title>Document</title>
 </head>
 <body>
   <div class="container-fluid normaldesktop:w-[1440px] mx-auto relative overflow-hidden">
-    <header class="w-full white absolute flex align-middle">
+    <header class="w-full white absolute flex align-middle z-20">
       <div class="container items-center h-[124px] flex justify-between">
         <a href="#"><img src="./images/main-logo.svg" alt="logo" class="w-auto max-w-min"></a>
         <nav>
@@ -18,20 +19,20 @@
             <li><a href="#" class="font-SatoshiMedium text-white">About Us</a></li>
             <li><a href="#" class="font-SatoshiMedium text-white">Pricing</a></li>
             <li><a href="#" class="font-SatoshiMedium text-white">Features</a></li>
-            <li><a href="#" class="px-[54px] py-5 bg-white font-SatoshiMedium text-blue rounded-[150px]">Sign In</a></li>
+            <li><a href="#" class="px-[54px] py-5 bg-white font-SatoshiMedium text-blue rounded-[150px] hover:bg-blue hover:text-white transition-all">Sign In</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
-      <div class="banner herobreak:pt-[140px] sm:pt-[500px] pt-[150px] h-[883px] bg-no-repeat overflow-hidden relative" style="background-position: 392px -802px">
-        <div class="container">
+      <div class="banner herobreak:pt-[140px] lg:pt-[500px] pt-[150px] bg-no-repeat overflow-hidden relative">
+        <div class="container lg:text-left text-center">
           <div class=" lg:w-[434px] w-full">
-            <h1 class="font-ClashSemiBold leading-[70px] text-[68px]">Simplified <span class="bg-secondary px-2">Productivity</span> App For All.</h1>
+            <h1 class="font-ClashSemiBold sm:leading-[70px] leading-[normal] sm:text-[68px] text-5xl">Simplified <span class="bg-secondary px-2">Productivity</span> App For All.</h1>
             <p class="font-satoshiRegular mt-5 leading-8 text-lg">Frybix Is Hub For Managing Productivity Tasks Professionaly And Efficiently</p>
             <form class="mt-8 flex gap-6">
               <input type="text" class="border-inputBorder border w-[calc(100%-90px)] py-6 pl-10 rounded-full placeholder-primary font-SatoshiMedium" placeholder="Hamzashahzad@Xeon.Com">
-              <button class="w-16 h-16 bg-blue rounded-full flex items-center justify-center drop-shadow-[0_8px_22px_rgb(102,64,255,0.3)]"><img src="images/arrow.svg" alt="arrow"></button>
+              <button class="w-16 h-16 bg-blue rounded-full flex items-center justify-center drop-shadow-[0_8px_22px_rgb(102,64,255,0.3)] hover:translate-x-2 transition-transform"><img src="images/arrow.svg" alt="arrow"></button>
             </form>
             <div class="mt-16 font-SatoshiMedium text-[#BFBFBF]">Already Using Frybix? <a href="#" class="text-blue font-satoshiBlack">Sign In</a></div>
             <div class="flex mt-9">
@@ -53,11 +54,11 @@
             </div>
           </div>
         </div>
-        <img src="images/main-banner.svg" alt="" class="absolute mylg:top-[-400px] myxlg:top-[-640px] top-[-400px] herobreak:left-[392px] herobreak:right-auto md:right-[-100px] md:left-auto left-0 -z-10 herobreak:h-auto h-[1027px] sm:block hidden">
+        <img src="images/main-banner.svg" alt="" class="absolute mylg:top-[-400px] myxlg:top-[-640px] top-[-400px] herobreak:left-[392px] herobreak:right-auto md:right-[-100px] md:left-auto left-0 -z-10 herobreak:h-auto h-[1027px] lg:block hidden">
       </div>
 
-      <section class="text-center overflow-hidden">
-        <div class="flex items-center gap-[10px] justify-center text-lg font-SatoshiMedium">Trusted By 20,000+ Clients
+      <section class="text-center overflow-hidden mt-36 px-5">
+        <div class="flex items-center gap-[10px] justify-center flex-wrap text-lg font-SatoshiMedium">Trusted By 20,000+ Clients
           <svg xmlns="http://www.w3.org/2000/svg" width="77.01" height="12.46" viewBox="0 0 77.01 12.46">
             <g id="Group" transform="translate(-793 -887)">
               <path id="Vector" d="M12.968,4.708a.692.692,0,0,1-.2.735L9.929,7.93l.837,3.684a.692.692,0,0,1-1.029.747L6.5,10.427,3.265,12.362a.691.691,0,0,1-1.028-.747L3.073,7.93.236,5.443A.692.692,0,0,1,.628,4.233l3.754-.341L5.866.42a.691.691,0,0,1,1.272,0L8.62,3.893l3.753.341a.69.69,0,0,1,.594.475Z" transform="translate(793 887)" fill="#6640ff"/>
@@ -68,100 +69,101 @@
             </g>
           </svg>
         </div>
-        <h2 class="text-5xl font-ClashSemiBold mt-6">They <span class="bg-secondary">Trust</span> Us.</h2>
+        <h2 class="sm:text-5xl text-4xl font-ClashSemiBold mt-6">They <span class="bg-secondary">Trust</span> Us.</h2>
   
-        <div class="flex items-center justify-evenly mt-16 animate-slideRight">
-          <a href="#"><img src="images/logo-1.png" alt="logo"></a>
-          <a href="#"><img src="images/logo-2.png" alt="logo"></a>
-          <a href="#"><img src="images/logo-3.png" alt="logo"></a>
-          <a href="#"><img src="images/logo-4.png" alt="logo"></a>
-          <a href="#"><img src="images/logo-5.png" alt="logo"></a>
-          <a href="#"><img src="images/logo-6.png" alt="logo"></a>
+        <div class="flex gap-x-28 items-center mt-16 animate-slideRight">
+          <a href="#"><img src="images/logo-1.png" alt="logo" class="herobreak:max-w-full max-w-[150px]"></a>
+          <a href="#"><img src="images/logo-2.png" alt="logo" class="herobreak:max-w-full max-w-[150px]"></a>
+          <a href="#"><img src="images/logo-3.png" alt="logo" class="herobreak:max-w-full max-w-[150px]"></a>
+          <a href="#"><img src="images/logo-4.png" alt="logo" class="herobreak:max-w-full max-w-[150px]"></a>
+          <a href="#"><img src="images/logo-5.png" alt="logo" class="herobreak:max-w-full max-w-[150px]"></a>
+          <a href="#"><img src="images/logo-6.png" alt="logo" class="herobreak:max-w-full max-w-[150px]"></a>
         </div>
-        <div class="flex items-center justify-evenly mt-32 animate-slideLeft">
-          <a href="#"><img src="images/logo-7.png" alt="logo"></a>
-          <a href="#"><img src="images/logo-8.png" alt="logo"></a>
-          <a href="#"><img src="images/logo-9.png" alt="logo"></a>
-          <a href="#"><img src="images/logo-10.png" alt="logo"></a>
-          <a href="#"><img src="images/logo-11.png" alt="logo"></a>
-          <a href="#"><img src="images/logo-12.png" alt="logo"></a>
-          <a href="#"><img src="images/logo-13.png" alt="logo"></a>
+        <div class="flex gap-x-28 items-center herobreak:mt-32 mt-11 animate-slideLeft">
+          <a href="#"><img src="images/logo-7.png" alt="logo"  class="herobreak:max-w-full max-w-[150px]" ></a>
+          <a href="#"><img src="images/logo-8.png" alt="logo"  class="herobreak:max-w-full max-w-[150px]" ></a>
+          <a href="#"><img src="images/logo-9.png" alt="logo"  class="herobreak:max-w-full max-w-[150px]" ></a>
+          <a href="#"><img src="images/logo-10.png" alt="logo"  class="herobreak:max-w-full max-w-[150px]" ></a>
+          <a href="#"><img src="images/logo-11.png" alt="logo"  class="herobreak:max-w-full max-w-[150px]" ></a>
+          <a href="#"><img src="images/logo-12.png" alt="logo"  class="herobreak:max-w-full max-w-[150px]" ></a>
+          <a href="#"><img src="images/logo-13.png" alt="logo"  class="herobreak:max-w-full max-w-[150px]" ></a>
         </div>
       </section>
   
-      <section class="text-center mt-36">
+      <section class="text-center mt-[154px] bg-no-repeat relative">
+        <img src="images/platform-bg.png" alt="bg" class="absolute top-[-174px] left-[-545px]">
         <div class="container">
-          <h2 class="text-5xl font-ClashSemiBold">Our <span class="bg-secondary">Platform</span> For Any Business</h2>
-          <div class="mt-11 flex justify-between">
-            <div class="max-w-[416px] w-full">
-              <div class="py-30 px-5 flex text-left w-full">
+          <h2 class="sm:text-5xl text-4xl font-ClashSemiBold">Our <span class="bg-secondary">Platform</span> For Any Business</h2>
+          <div class="mt-11 flex md:flex-row flex-col justify-between">
+            <div class="md:max-w-[416px] max-w-full ">
+              <div data-aos="fade-right" class="py-[30px] px-5 flex text-left w-full rounded-3xl bg-white shadow-[0px_54px_99px_rgba(205,205,205,0.16)] relative z-10">
                 <div class="img">
-                  <img src="images/icon-1.png" alt="" srcset="">
+                  <img src="images/icon-1.png" alt="icon">
                 </div>
-                <div class="w-[307px] ml-5">
+                <div class="md:w-[307px] w-full ml-5">
                   <h3 class="font-ClashSemiBold text-2xl">Appointments</h3>
                   <p class="text-lg mt-3 opacity-[50%]">Many desktop publishing packages and web page editors now use for them.</p>
                 </div>
               </div>
   
-              <div class="py-30 px-5 mt-12 flex text-left w-full">
+              <div data-aos="fade-right" class="py-30 px-5 mt-12 flex text-left w-full">
                 <div class="img">
-                  <img src="images/icon-2.png" alt="" srcset="">
+                  <img src="images/icon-2.png" alt="icon">
                 </div>
-                <div class="w-[307px] ml-5">
+                <div class="md:w-[307px] w-full ml-5">
                   <h3 class="font-ClashSemiBold text-2xl">Class Bookings</h3>
                   <p class="text-lg mt-3 opacity-[50%]">Many desktop publishing packages and web page editors now use for them.
                 </div>
               </div>
   
-              <div class="py-30 px-5 mt-12 flex text-left w-full">
+              <div data-aos="fade-right" class="py-30 px-5 mt-12 flex text-left w-full">
                 <div class="img">
-                  <img src="images/icon-3.png" alt="" srcset="">
+                  <img src="images/icon-3.png" alt="icon">
                 </div>
-                <div class="w-[307px] ml-5">
+                <div class="md:w-[307px] w-full ml-5">
                   <h3 class="font-ClashSemiBold text-2xl">Fast Support</h3>
                   <p class="text-lg mt-3 opacity-[50%]">Many desktop publishing packages and web page editors now use for them.</p>
                 </div>
               </div>
             </div>
             <div class="col max-w-[610px] w-full">
-              <img src="images/platform-icon.svg" alt="" srcset="">
+              <img src="images/output-onlinepngtools.png" alt="img" class="w-full" data-aos="zoom-in">
             </div>
           </div>
         </div>
       </section>
-  
-      <section class="max-w-[1076px] w-full bg-blue mx-auto mt-36 md:rounded-2xl flex gap-12 px-12 py-11 md:flex-row flex-col text-white text-center">
+
+      <section id="counter" class="max-w-[1076px] w-full bg-blue mx-auto mt-36 md:rounded-2xl flex gap-12 px-12 py-11 md:flex-row flex-col text-white text-center">
         <div>
-          <h4 class="lg:text-5xl text-3xl font-ClashSemiBold">110+</h4>
+          <h4 class="lg:text-5xl text-3xl font-ClashSemiBold"><span class="counter-value" data-count="110"></span>+</h4>
           <p class="mt-[10px] leading-6 font-SatoshiMedium">Automation Templates For Creating Your Campaigns Quickly</p>
         </div>
         <div>
-          <h4 class="lg:text-5xl text-3xl font-ClashSemiBold">4M</h4>
+          <h4 class="lg:text-5xl text-3xl font-ClashSemiBold"><span class="counter-value counter-value" data-count="4"></span>M</h4>
           <p class="mt-[10px] leading-6 font-SatoshiMedium">Automation Templates For Creating Your Campaigns Quickly</p>
         </div>
         <div>
-          <h4 class="lg:text-5xl text-3xl font-ClashSemiBold">99.99%</h4>
+          <h4 class="lg:text-5xl text-3xl font-ClashSemiBold"><span class="counter-value" data-count="99.99"></span>%</h4>
           <p class="mt-[10px] leading-6 font-SatoshiMedium">Automation Templates For Creating Your Campaigns Quickly</p>
         </div>
       </section>
 
-      <section class="md:mt-[150px] mt-[70px] md:px-0 px-5">
+      <section class="md:mt-[150px] mt-[70px] md:px-0 px-5" >
         <div class="container flex gap-x-32 gap-y-7 items-center md:flex-row flex-col-reverse">
            <div class="md:w-[505px] w-full">
             <h3 class="herobreak:text-5xl text-2xl font-ClashSemiBold">Manage Your Tasks <span class="bg-secondary relative -z-10">Online</span> Easily.</h3>
             <p class="mt-[23px] text-[17px] font-SatoshiMedium opacity-[50%]">Pellentesque Blandit Augue Facilisis Malesuada Interdum Eleifend Risus, Commodo. Egestas Senectus Vehicula Vel Consectetur Eu. Sit Pulvinar Urna Diam Lacus Fringilla Eu Cursus.</p>
           </div>
            <div class="md:w-[610px] w-full">
-            <img src="images/image-1.png" alt="" srcset="">
+            <img src="images/image-1.png" alt="" data-aos="zoom-in">
            </div>
         </div>
       </section>
 
-      <section class="md:mt-[150px] mt-[70px] md:px-0 px-5">
+      <section class="bg-[url('images/platform-bg.png')] md:mt-[150px] mt-[70px] md:px-0 px-5">
         <div class="container flex gap-x-32 gap-y-7 items-center md:flex-row flex-col">
           <div class="md:w-[610px] w-full">
-            <img src="images/image-2.png" alt="" srcset="">
+            <img src="images/image-2.png" alt="" data-aos="zoom-in">
           </div>
           <div class="md:w-[505px] w-full">
             <h3 class="herobreak:text-5xl text-2xl font-ClashSemiBold">Keep <span class="bg-secondary relative -z-10">Track</span>  Of All Your Progress.</h3>
@@ -175,74 +177,74 @@
           <div class="md:w-[550px] w-full">
             <h3 class="herobreak:text-5xl text-2xl font-ClashSemiBold">More <span class="bg-secondary relative -z-10">Connections</span>, No More Cancellations</h3>
             <p class="mt-[23px] text-[17px] font-SatoshiMedium opacity-[50%]">Pellentesque Blandit Augue Facilisis Malesuada Interdum Eleifend Risus, Commodo. Egestas Senectus Vehicula Vel Consectetur Eu. Sit Pulvinar Urna Diam Lacus Fringilla Eu Cursus.</p>
-            <a href="#" class="mt-[26px] px-[37px] py-[20px] rounded-full bg-blue inline-block font-SatoshiBold text-white">Get Started</a>
+            <a href="#" class="mt-[26px] px-[37px] py-[20px] rounded-full bg-blue inline-block font-SatoshiBold text-white hover:bg-white border-2 transition-all hover:border-2 hover:border-blue hover:text-blue">Get Started</a>
           </div>
 
           <div class="md:w-[610px] w-full">
-            <img src="images/image-3.png" alt="" srcset="">
+            <img src="images/image-3.png" alt="" data-aos="zoom-in">
           </div>
         </div>
       </section>
 
-      <section class="mt-[133px]">
+      <section class="mt-[133px]" data-aos="zoom-in">
         <div class="container">
-          <h2 class="text-5xl font-ClashSemiBold max-w-[889px] w-full text-center mx-auto">Frybix Has The Ability To Serve Any <span class="bg-secondary">Business Segment</span></h2>
+          <h2 class="sm:text-5xl text-4xl font-ClashSemiBold max-w-[889px] w-full text-center mx-auto">Frybix Has The Ability To Serve Any <span class="bg-secondary">Business Segment</span></h2>
           <div class="flex mt-11 gap-5 flex-wrap justify-center">
-            <div class="py-[30px] px-5 flex text-left basis-[32.1%] shadow-[0_54.48px_128.19px_rgb(205,205,205,16%)] rounded-3xl bg-white">
+            <div class="py-[30px] px-5 flex text-left md:basis-[32.1%] basis-full shadow-[0_54.48px_128.19px_rgb(205,205,205,16%)] rounded-3xl bg-white">
               <div class="img">
                 <img src="images/icon-4.png" alt="" srcset="">
               </div>
-              <div class="w-[307px] ml-5">
+              <div class="md:w-[307px] w-full ml-5">
                 <h3 class="font-ClashSemiBold text-2xl">Education System</h3>
                 <p class="text-lg mt-3 opacity-[50%]">Many desktop publishing packages and web page editors now use for them.</p>
               </div>
             </div>
 
-            <div class="py-[30px] px-5 flex text-left basis-[32.1%] shadow-[0_54.48px_128.19px_rgb(205,205,205,16%)] rounded-3xl bg-white">
+            <div class="py-[30px] px-5 flex text-left md:basis-[32.1%] basis-full shadow-[0_54.48px_128.19px_rgb(205,205,205,16%)] rounded-3xl bg-white">
               <div class="img">
                 <img src="images/icon-5.png" alt="" srcset="">
               </div>
-              <div class="w-[307px] ml-5">
+              <div class="md:w-[307px] w-full ml-5">
                 <h3 class="font-ClashSemiBold text-2xl">Sports & Fitness</h3>
                 <p class="text-lg mt-3 opacity-[50%]">Many desktop publishing packages and web page editors now use for them.</p>
               </div>
             </div>
 
-            <div class="py-[30px] px-5 flex text-left basis-[32.1%] shadow-[0_54.48px_128.19px_rgb(205,205,205,16%)] rounded-3xl bg-white">
+            <div class="py-[30px] px-5 flex text-left md:basis-[32.1%] basis-full shadow-[0_54.48px_128.19px_rgb(205,205,205,16%)] rounded-3xl bg-white">
               <div class="img">
                 <img src="images/icon-6.png" alt="" srcset="">
               </div>
-              <div class="w-[307px] ml-5">
+              <div class="md:w-[307px] w-full ml-5">
                 <h3 class="font-ClashSemiBold text-2xl">Beauty & Wellness</h3>
                 <p class="text-lg mt-3 opacity-[50%]">Many desktop publishing packages and web page editors now use for them.</p>
               </div>
             </div>
 
-            <div class="py-[30px] px-5 flex text-left basis-[32.1%] shadow-[0_54.48px_128.19px_rgb(205,205,205,16%)] rounded-3xl bg-white">
+            <div class="py-[30px] px-5 flex text-left md:basis-[32.1%] basis-full shadow-[0_54.48px_128.19px_rgb(205,205,205,16%)] rounded-3xl bg-white">
               <div class="img">
                 <img src="images/icon-7.png" alt="" srcset="">
               </div>
-              <div class="w-[307px] ml-5">
+              <div class="md:w-[307px] w-full ml-5">
                 <h3 class="font-ClashSemiBold text-2xl">Officials & Financial</h3>
                 <p class="text-lg mt-3 opacity-[50%]">Many desktop publishing packages and web page editors now use for them.</p>
               </div>
             </div>
 
-            <div class="py-[30px] px-5 flex text-left basis-[32.1%] shadow-[0_54.48px_128.19px_rgb(205,205,205,16%)] rounded-3xl bg-white">
+            <div class="py-[30px] px-5 flex text-left md:basis-[32.1%] basis-full shadow-[0_54.48px_128.19px_rgb(205,205,205,16%)] rounded-3xl bg-white">
               <div class="img">
                 <img src="images/icon-8.png" alt="" srcset="">
               </div>
-              <div class="w-[307px] ml-5">
+              <div class="md:w-[307px] w-full ml-5">
                 <h3 class="font-ClashSemiBold text-2xl">Medical Services</h3>
                 <p class="text-lg mt-3 opacity-[50%]">Many desktop publishing packages and web page editors now use for them.</p>
               </div>
             </div>
 
-            <div class="py-[30px] px-5 flex text-left basis-[32.1%] shadow-[0_54.48px_128.19px_rgb(205,205,205,16%)] rounded-3xl bg-white">
+            <div class="py-[30px] px-5 flex text-left md:basis-[32.1%] basis-full shadow-[0_54.48px_128.19px_rgb(205,205,205,16%)] rounded-3xl bg-white">
               <div class="img">
                 <img src="images/icon-9.png" alt="" srcset="">
               </div>
-              <div class="w-[307px] ml-5">
+              <div class="md:w-[307px] w-full ml-5">
                 <h3 class="font-ClashSemiBold text-2xl">Events & Entertainment</h3>
                 <p class="text-lg mt-3 opacity-[50%]">Many desktop publishing packages and web page editors now use for them.</p>
               </div>
@@ -252,9 +254,10 @@
         </div>
       </section>
 
-      <section class="mt-28 text-center">
-        <div class="max-w-[610px] w-full mx-auto">
-          <div class="flex items-center gap-[10px] justify-center text-lg font-SatoshiMedium">Trusted By 20,000+ Clients
+      <section class="mt-28 text-center relative">
+        <img  src="images/client-section-bg.png" alt="bg" class="absolute bottom-[-544px] left-0 z-10 l:block hidden" data-aos="fade-right">
+        <div class="max-w-[650px] w-full mx-auto px-5">
+          <div class="flex items-center gap-[10px] justify-center flex-wrap text-lg font-SatoshiMedium">Trusted By 20,000+ Clients
             <svg xmlns="http://www.w3.org/2000/svg" width="77.01" height="12.46" viewBox="0 0 77.01 12.46">
               <g id="Group" transform="translate(-793 -887)">
                 <path id="Vector" d="M12.968,4.708a.692.692,0,0,1-.2.735L9.929,7.93l.837,3.684a.692.692,0,0,1-1.029.747L6.5,10.427,3.265,12.362a.691.691,0,0,1-1.028-.747L3.073,7.93.236,5.443A.692.692,0,0,1,.628,4.233l3.754-.341L5.866.42a.691.691,0,0,1,1.272,0L8.62,3.893l3.753.341a.69.69,0,0,1,.594.475Z" transform="translate(793 887)" fill="#6640ff"/>
@@ -265,11 +268,11 @@
               </g>
             </svg>
           </div>
-          <h2 class="text-5xl font-ClashSemiBold mt-6">What Our Client <span class="bg-secondary">Think</span> About Us?</h2>
+          <h2 class="sm:text-5xl text-4xl font-ClashSemiBold mt-6">What Our Client <span class="bg-secondary">Think</span> About Us?</h2>
         </div>
 
         <div class="container bg-[#EFEBFF] h-[779px] mt-16 relative">
-          <div class="w-[665px] h-[665px] border-[rgb(64,87,191,6%)] border rounded-full absolute top-[15px] left-[26%]"></div>
+          <div class="md:w-[665px] md:h-[665px] w-[300px] h-[300px] border-[rgb(64,87,191,6%)] border rounded-full absolute top-[15px] left-[26%]"></div>
           <div class="w-[993px] h-[993px] border-[rgb(64,87,191,6%)] border rounded-full absolute top-[-118px] left-[206px]"></div>
 
           <div class="w-4 h-4 bg-blue rounded-full absolute top-[45px] left-[339px]"></div>
@@ -278,42 +281,132 @@
           <div class="w-4 h-4 bg-[#FF77D9] rounded-full absolute top-[313px] left-[192px]"></div>
           <div class="w-4 h-4 bg-[#FF77D9] rounded-full absolute bottom-[145px] right-[135px]"></div>
 
-          <div class="clients cursor-pointer border-2 transitin-top transition-left transition-right duration-1000 w-16 h-16 rounded-full bg-blue border-white absolute top-[110px] left-[525px] z-10">
-            <img src="images/client-pic.png" alt="" class="absolute bottom-[-1px] left-[-1px] z-10">
+          <div data-for="jhonyscotty" class="clients cursor-pointer border-2 transitin-top transition-left transition-right duration-1000 w-[93px] h-[93px]  rounded-full bg-blue border-white absolute top-[263px] left-[90%] active overflow-hidden">
+            <img src="images/client-5.png" alt="" class="w-full absolute bottom-[-1px] left-[-1px] z-10">
           </div>
 
-          <div class="clients cursor-pointer border-2 transitin-top transition-left transition-right duration-1000 w-[93px] h-[93px] active rounded-full bg-blue border-white absolute top-[263px] right-10">
-            <img src="images/client-5.png" alt="" class="absolute bottom-[-1px] left-[-1px] z-10">
+          <div data-for="jhonyscotty2" class="clients cursor-pointer border-2 transitin-top transition-left transition-right duration-1000 w-16 h-16 rounded-full bg-blue border-white absolute top-[110px] left-[41.3%] z-10 overflow-hidden">
+            <img src="images/client-pic.png" alt="" class="w-full absolute bottom-[-1px] left-[-1px] z-10">
           </div>
 
-          <div class="clients cursor-pointer border-2 transitin-top transition-left transition-right  duration-1000 w-[93px] h-[93px] rounded-full bg-[#FF77D9] border-white absolute top-[170px] right-[260px] z-10">
-            <img src="images/client-2.png" alt="" class="absolute bottom-[-1px] left-[-1px] z-10">
+          <div data-for="jhonyscotty3" class="clients cursor-pointer border-2 transitin-top transition-left transition-right  duration-1000 w-[93px] h-[93px] rounded-full bg-[#FF77D9] border-white absolute top-[170px] left-[72%] z-10 overflow-hidden">
+            <img src="images/client-2.png" alt="" class="w-full absolute bottom-[-1px] left-[-1px] z-10">
           </div>
 
-          <div class="clients cursor-pointer border-2 transitin-top transition-left transition-right duration-1000 w-[93px] h-[93px] rounded-full bg-[#FF77D9] border-white absolute top-[244px] left-[340px] z-10">
-            <img src="images/client-4.png" alt="" class="absolute bottom-[-1px] left-[-1px] z-10">
+          <div data-for="jhonyscotty4" class="clients cursor-pointer border-2 transitin-top transition-left transition-right duration-1000 w-[93px] h-[93px] rounded-full bg-[#FF77D9] border-white absolute top-[244px] lg:left-[26.6%] left-[2%] z-10 overflow-hidden">
+            <img src="images/client-4.png" alt="" class="w-full absolute bottom-[-6px] left-[-1px] z-10">
           </div>
 
-          <div class="clients cursor-pointer border-2 w-[91px] h-[91px] rounded-full bg-blue border-white absolute right-[151px] bottom-[228px] z-10">
-            <img src="images/client-3.png" alt="" class="absolute bottom-[-1px] left-[-1px] z-10">
+          <div data-for="jhonyscotty5" class="clients cursor-pointer border-2 transitin-top transition-left transition-right duration-1000 w-[91px] h-[91px] rounded-full bg-blue border-white absolute l:left-[81%] l:top-[461px] top-[50px] left-[60%] z-10 overflow-hidden">
+            <img src="images/client-3.png" alt="" class="w-full absolute bottom-[-3px] left-[-2px] z-10">
           </div>
 
-          <div class="w-[480px] h-[480px] rounded-full border-2 border-blue relative top-28 left-2/4 -translate-x-2/4">
+          <div class="md:w-[480px] md:h-[480px] w-[300px] h-[300px] rounded-full border-2 border-blue relative top-28 left-2/4 -translate-x-2/4">
             <div class="w-[414px] h-[414px] border-[rgb(64,87,191,6%)] border rounded-full absolute top-[33px] right-0"></div>
           </div>
 
-          <div class="reviews">
-            <div class="review max-w-[571px] w-full p-[30px] bg-white absolute bottom-[109px] left-2/4 -translate-x-2/4 before:content-[''] before:absolute before:top-[-33px] before:left-2/4 before:-translate-x-2/4 before:border-l-[54px] before:border-r-[54px] before:border-b-[33px] before:border-white before:border-l-[transparent] before:border-r-[transparent]">
-              <p class="opacity-[50%] font-satoshiRegular">Build your financial literacy within a transparent community. Follow other investors, share insights with people from different professional backgrounds, and never be alone.</p>
-              <h3 class="font-SatoshiBold text-2xl mt-2">Jony Scotty</h3>
-              <h4 class="font-SatoshiBold text-sm mt-2">UI Designer</h4>
+          <div class="reviews z-20 absolute bottom-[109px] max-w-[571px] w-full left-2/4 -translate-x-2/4">
+            <div id="jhonyscotty" class="review-content  p-[30px] bg-white  before:content-[''] before:absolute before:top-[-33px] before:left-2/4 before:-translate-x-2/4 before:border-l-[54px] before:border-r-[54px] before:border-b-[33px] before:border-white before:border-l-[transparent] before:border-r-[transparent]">
+              <p class="opacity-[50%] font-satoshiRegular" data-aos="fade-up">Build your financial literacy within a transparent community. Follow other investors, share insights with people from different professional backgrounds, and never be alone.</p>
+              <h3 class="font-SatoshiBold text-2xl mt-2" data-aos="fade-up">Jony Scotty</h3>
+              <h4 class="font-SatoshiBold text-sm mt-2" data-aos="fade-up">UI Designer</h4>
+            </div>
+
+            <div id="jhonyscotty2" class="hidden review-content p-[30px] bg-white before:content-[''] before:absolute before:top-[-33px] before:left-2/4 before:-translate-x-2/4 before:border-l-[54px] before:border-r-[54px] before:border-b-[33px] before:border-white before:border-l-[transparent] before:border-r-[transparent]">
+              <p class="opacity-[50%] font-satoshiRegular" data-aos="fade-up">Build your financial literacy within a transparent community. Follow other investors, share insights with people from different professional backgrounds, and never be alone.</p>
+              <h3 class="font-SatoshiBold text-2xl mt-2" data-aos="fade-up">Jony Scotty 2</h3>
+              <h4 class="font-SatoshiBold text-sm mt-2" data-aos="fade-up">UI Designer</h4>
+            </div>
+
+            <div id="jhonyscotty3" class="hidden review-content p-[30px] bg-white before:content-[''] before:absolute before:top-[-33px] before:left-2/4 before:-translate-x-2/4 before:border-l-[54px] before:border-r-[54px] before:border-b-[33px] before:border-white before:border-l-[transparent] before:border-r-[transparent]">
+              <p class="opacity-[50%] font-satoshiRegular" data-aos="fade-up">Build your financial literacy within a transparent community. Follow other investors, share insights with people from different professional backgrounds, and never be alone.</p>
+              <h3 class="font-SatoshiBold text-2xl mt-2" data-aos="fade-up">Jony Scotty 3</h3>
+              <h4 class="font-SatoshiBold text-sm mt-2" data-aos="fade-up">UI Designer</h4>
+            </div>
+
+            <div id="jhonyscotty4" class="hidden review-content p-[30px] bg-white before:content-[''] before:absolute before:top-[-33px] before:left-2/4 before:-translate-x-2/4 before:border-l-[54px] before:border-r-[54px] before:border-b-[33px] before:border-white before:border-l-[transparent] before:border-r-[transparent]">
+              <p class="opacity-[50%] font-satoshiRegular" data-aos="fade-up">Build your financial literacy within a transparent community. Follow other investors, share insights with people from different professional backgrounds, and never be alone.</p>
+              <h3 class="font-SatoshiBold text-2xl mt-2" data-aos="fade-up">Jony Scotty 4</h3>
+              <h4 class="font-SatoshiBold text-sm mt-2" data-aos="fade-up">UI Designer</h4>
+            </div>
+
+            <div id="jhonyscotty5" class="hidden review-content p-[30px] bg-white before:content-[''] before:absolute before:top-[-33px] before:left-2/4 before:-translate-x-2/4 before:border-l-[54px] before:border-r-[54px] before:border-b-[33px] before:border-white before:border-l-[transparent] before:border-r-[transparent]">
+              <p class="opacity-[50%] font-satoshiRegular" data-aos="fade-up">Build your financial literacy within a transparent community. Follow other investors, share insights with people from different professional backgrounds, and never be alone.</p>
+              <h3 class="font-SatoshiBold text-2xl mt-2" data-aos="fade-up">Jony Scotty 5</h3>
+              <h4 class="font-SatoshiBold text-sm mt-2" data-aos="fade-up">UI Designer</h4>
             </div>
           </div>
         </div>
       </section>
-    </main>
-  </div>
 
+      <section class="l:mt-[200px] bg-[#F9F9F9] text-center py-[140px]">
+        <div data-aos="fade-up" class="max-w-[506px] px-5 w-full mx-auto relative z-10">
+          <h2 class="sm:text-5xl text-4xl font-ClashSemiBold mt-6">Try <span class="bg-secondary">Frybix</span> For Free</h2>
+          <p class="text-xl mt-6 font-SatoshiMedium">Frybix Is Hub For Managing Productivity Tasks Professionaly And Efficiently</p>
+          <a href="#" class="md:max-w-[340px] max-w-xs px-3 mx-auto font-SatoshiMedium w-full md:py-7 py-5 border-2 border-black mt-6 rounded-full flex items-center justify-center transition-all hover:-translate-y-3 ">Get Frybix App <img src="images/down-arrow.png" alt="" class="ml-[8px]"> </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="pt-[150px] relative">
+      <img src="images/footer-bg.png" alt="footer-bg" class="absolute right-0 top-[-333px] l:block hidden"  data-aos="fade-left">
+       <div class="container flex flex-wrap relative z-10 l:gap-x-0 gap-x-10 gap-y-10 justify-center">
+        <div class="w-full l:max-w-[171px] sm:max-w-[150px] l:mr-[103px] ">
+          <a href="#" class="text-center block"><img src="images/footer-logo.svg" alt="footer logo" class="sm:block inline-block"></a>
+          <div class="mt-[25px] flex font-SatoshiMedium sm:justify-start justify-center">
+            <img src="images/email-icon.svg" alt="email-icon" class="mr-2">
+            Help@Frybix.Com
+          </div>
+          <div class="mt-[26px] flex font-SatoshiMedium sm:justify-start justify-center">
+            <img src="images/phone-icon.svg" alt="phone-icon" class="mr-2">
+            +1 234 456 678 89
+          </div>
+        </div>
+        <div class="w-full l:max-w-[85px] sm:max-w-[150px] l:mr-[100px] l:text-left text-center">
+          <h3 class="text-[32px] font-ClashSemiBold">Links</h3>
+          <nav>
+            <a href="#" class="mt-[22px] block font-SatoshiMedium">Home</a>
+            <a href="#" class="mt-[22px] block font-SatoshiMedium">About Us</a>
+            <a href="#" class="mt-[22px] block font-SatoshiMedium">Bookings</a>
+            <a href="#" class="mt-[22px] block font-SatoshiMedium">Blog</a>
+          </nav>
+        </div>
+        <div class="w-full l:max-w-[100px] sm:max-w-[150px] l:mr-28 l:text-left text-center">
+          <h3 class="text-[32px] font-ClashSemiBold">Legal</h3>
+          <nav>
+            <a href="#" class="mt-[22px] block font-SatoshiMedium">Terms Of Use</a>
+            <a href="#" class="mt-[22px] block font-SatoshiMedium">Privacy Policy</a>
+            <a href="#" class="mt-[22px] block font-SatoshiMedium">Cookie Policy</a>
+          </nav>
+        </div>
+        <div class="w-full l:max-w-[132px] sm:max-w-[150px] l:mr-24 l:text-left text-center">
+          <h3 class="text-[32px] font-ClashSemiBold">Product</h3>
+          <nav>
+            <a href="#" class="mt-[22px] block font-SatoshiMedium">Take Tour</a>
+            <a href="#" class="mt-[22px] block font-SatoshiMedium">Live Chat</a>
+            <a href="#" class="mt-[22px] block font-SatoshiMedium">Reveiws</a>
+          </nav>
+        </div>
+        <div class="w-full sm:max-w-[340px] max-w-full l:text-left text-center">
+          <h3 class="text-[32px] font-ClashSemiBold">Newsletter</h3>
+          <form action="" class="mt-[21px]">
+            <label for="email" class="font-SatoshiMedium">Stay Up To Date</label>
+            <div class="relative mt-[18px]">
+              <input type="email" id="email" class="border-2 border-[#E1E1E1] py-[30px] rounded-full w-full px-6" placeholder="Your email">
+              <button type="submit" class="px-11 py-5 font-SatoshiBold bg-blue rounded-full text-white absolute right-[10px] top-1/2 -translate-y-1/2 hover:bg-white border-2 transition-all hover:border-2 hover:border-blue hover:text-blue">Subscribe</button>
+            </div>
+          </form>
+        </div>
+       </div>
+       <div class="border border-[#D9D9D9] py-11 font-SatoshiMedium text-center max-w-[1034px] w-full mx-auto mt-24 z-10 relative">Copyright 2022 Frybix Inc. All Rights Reserved</div>
+    </footer>
+  </div>
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="js/index.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

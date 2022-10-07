@@ -32,8 +32,21 @@
 .active {
   width: 168px;
   height: 168px;
-  top: 263px;
-  left: 50%;
+  top: 263px !important;
+  left: 50% !important;
   transform: translateX(-50%);
   border-width: 8px;
+}
+
+@media (max-width: 768px) {
+  .active {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.my {
+  background-image: url('images/platform-bg.png');
+  background-position: top left;
+  background-color: rgba(12, 226, 12, 0.474);
 }
