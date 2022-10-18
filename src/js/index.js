@@ -1,3 +1,25 @@
+const menuOpenBtn = document.querySelector('.menuOpenBtn');
+const navbar = document.querySelector('.navbar');
+const navbarNav = document.querySelector('.navbar nav');
+
+const blocker = document.querySelector('.blocker');
+
+menuOpenBtn.addEventListener('click', ()=> {
+  navbarNav.classList.remove('-translate-x-full')
+  navbar.classList.add('z-[auto]')
+  navbar.classList.remove('z-10')
+  navbarNav.classList.add('z-100')
+  blocker.classList.remove('hidden')
+})
+
+blocker.addEventListener('click', ()=> {
+  navbarNav.classList.add('-translate-x-full')
+  navbar.classList.remove('z-[auto]')
+  navbar.classList.add('z-10')
+  blocker.classList.add('hidden')
+})
+
+
 
 
 const clients = document.querySelectorAll('.clients');

@@ -5,24 +5,29 @@
 @font-face {
   font-family: "satoshiBlack";
   src: url("../src/fonts/Satoshi-Black.otf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "satoshiRegular";
   src: url("../src/fonts/Satoshi-Regular.otf");
+  font-display: swap;
 }
 @font-face {
   font-family: "SatoshiMedium";
   src: url("../src/fonts/Satoshi-Medium.otf");
+  font-display: swap;
 }
 @font-face {
   font-family: "SatoshiBold";
   src: url("../src/fonts/Satoshi-Bold.otf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "ClashSemiBold";
   src: url("../src/fonts/ClashDisplay-Semibold.otf");
+  font-display: swap;
 }
 
 .cliphpath {
@@ -45,8 +50,8 @@
   }
 }
 
-.my {
-  background-image: url('images/platform-bg.png');
-  background-position: top left;
-  background-color: rgba(12, 226, 12, 0.474);
+@layer utilities {
+  .pause img{
+    animation-play-state: paused;
+  }
 }

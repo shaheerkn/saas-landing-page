@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     colors: {
       'primary': "#000",
-      'secondary': '#FFF0D9',
+      'secondary': 'rgb(255,240,217)',
       'blue': '#6640FF',
       'white': "#FFF",
       'inputBorder': "#E1E1E1"
@@ -22,29 +22,29 @@ module.exports = {
       ClashSemiBold: ["ClashSemiBold", "sans-serif"],
     },
     screens: {
-      mylg: "1100px",
       xs: "420px",
       sm: "576px",
       md: "768px",
       lg: "992px",
       l: "1124px",
+      customlg: "1100px",
       herobreak: "1156px",
       xl: "1300px",
-      myxlg: '1400px',
-      normaldesktop: '1440px'
+      customxlg: '1400px',
+      containerFluid: '1440px'
     },
     animation: {
-      "slideLeft": 'slideLeft 40s linear infinite',
-      "slideRight": 'slideRight 40s linear infinite'
+      "slideLeft": 'slideLeft 50s alternate linear infinite',
+      "slideRight": 'slideRight 50s alternate linear infinite'
     },
     keyframes: {
       slideLeft: {
-        '0%': { transform: 'translateX(0%)' },
-        '100%': { transform: 'translateX(-100%)' },
+        '0%': { transform: 'translate3d(0,0,0)' },
+        '100%': { transform: 'translate3d(-1100px,0,0)' },
       },
       slideRight: {
-      '0%': { transform: 'translateX(0%)' },
-      '100%': { transform: 'translateX(100%)' },
+        '0%': { transform: 'translate3d(-1440px,0,0)' },
+        '100%': { transform: 'translate3d(1440px,0,0)' },
       }
     }
   },
